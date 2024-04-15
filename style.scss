@@ -1,0 +1,786 @@
+@import 'vars';
+@import 'mixin';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: $widthSite;
+    margin: 0 auto;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.heder {
+    display: flex;
+    width: 1600px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.17);
+
+    &__left{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 37px;
+    }
+
+    &__left-logo-a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 13px;
+    }
+
+    &__left-search{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__left-h2{
+        font-family: Lato;
+        font-size: 27px;
+        line-height: 32px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #222222;
+    }
+
+    &__left-h2-span{
+        font-weight: 900;
+        color: $colorSelectSite;
+    }
+
+    &__left-search-button{
+        width: 87px;
+        height: 40px;
+        background-color: #cdcdcc;
+        background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
+        border: 1px solid #e6e6e6;
+        border-radius: 3px 0px 0px 3px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    &__left-search-button::before{
+        content: '\f0d7';
+        font-family: FontAwesome;
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #838383;
+    }
+
+    &__left-search-form{
+        width: 317px;
+        height: 38px;
+        background-color: #ffffff;
+        border: 1px solid #e6e6e6;
+        border-radius: 0px 3px 3px 0px;
+    }
+
+    &__left-search-form form{
+        position: relative;
+        margin: 0 auto;
+    }
+
+    &__left-search-form input{
+        width: 301px;
+        height: 38px;
+        padding-left: 16px;
+        border: 0px solid #fff;;
+        border-radius: 0px 3px 3px 0px;
+        outline: none;
+        background: #ffffff;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        color: #a4a4a4;
+    }
+
+    &__left-search-form button{
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: 38px;
+        height: 38px;
+        border: none;
+        background-color: #ffffff;
+        border: 1px solid #e6e6e6;
+        cursor: pointer;
+    }
+
+    &__left-search-form button::before{
+        content: "\f002";
+        font-family: FontAwesome;
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #a4a4a4;
+    }
+
+    &__right{
+        display: flex;
+        gap: 26px;
+        align-items: center;
+    }
+
+    &__right-button-basket{
+        width: 32px;
+        height: 29px;
+        background-color: #ffffff;
+        border: 0px solid #ffffff;
+        cursor: pointer;
+    }
+
+    &__right-button-account{
+        width: 130px;
+        height: 38px;
+        background-color: $colorSelectSite;
+        border: 0px solid $colorSelectSite;
+        font-family: Lato;
+        font-size: 15px;
+        line-height: 32px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    &__right-button-account::before{
+        content: '\f0d7';
+        font-family: FontAwesome;
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+    }
+
+    &__right-button-account:hover{
+        @include targetingEffectButton();
+    }
+
+    &__right-button-account:hover:before{
+        color: $colorSelectSite;
+    }
+}
+
+.slider{
+    width: 1600px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__nav{
+        height: 51px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #222222;
+        cursor: pointer;
+    }
+
+    &__nav-button{
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #222222;
+        background-color: #ffffff;
+        border: 0px solid #ffffff;
+        cursor: pointer;
+    }
+
+    &__banner{
+        width: 1600px;
+        height: 665px;
+        background: url(./img/image_baner.png);
+        display: flex;
+        align-items: center;
+        padding-left: 200px;
+    }
+
+    &__banner-text{
+        border-left: 12px solid $colorSelectSite;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 12px;
+    }
+
+    &__banner-text h1{
+        font-family: Lato;
+        font-size: 60px;
+        line-height: 1.2;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        color: #222222;
+    }
+
+    &__banner-text h2{
+        font-family: Lato;
+        font-size: 40px;
+        line-height: 1.2;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        color: #222222;
+    }
+
+    &__banner-text span{
+        font-family: Lato;
+        font-size: 40px;
+        line-height: 1.2;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        color: $colorSelectSite;
+    }
+}
+
+.banner{
+    padding: 98px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+
+    &__big-card1{
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    &__big-card2{
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    &__column{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__card{
+        width: 560px;
+        position: relative;
+    }
+
+    &__card img{
+        width: 100%;
+    }
+
+    &__text{
+        position: absolute;
+        top: 26px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 175px;
+        height: 82px;
+        background-color: #ffffff;
+        padding: 16px 20px;
+    }
+
+    &__text h2 {
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #222222;
+    }
+
+    &__text h1 {
+        font-size: 30px;
+        color: $colorSelectSite;
+    }
+
+    &__card:hover{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 110px;
+
+    &__title h2{
+        font-family: Lato;
+        font-size: 30px;
+        line-height: 54px;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: #222222;
+    }
+
+    &__title p{
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 54px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #9f9f9f;
+    }
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__card{
+        width: 261px;
+    }
+
+    &__card-text h3{
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #222222;
+    }
+
+    &__card-text p{
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorSelectSite;
+    }
+
+    &__card-text{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        padding: 20px 14px;
+    }
+
+    &__section-card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 32px;
+        padding: 60px 0;
+    }
+
+    &__button {
+        width: 212px;
+        height: 48px;
+        background-color: $colorSelectSite;
+        border: 0px solid $colorSelectSite;
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 54px;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    &__button::before{
+        content: '\f178';
+        font-family: FontAwesome;
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+    }
+
+    &__button:hover{
+        @include targetingEffectButton();
+    }
+
+    &__button:hover:before{
+        color: $colorSelectSite;
+    }
+}
+
+.feature{
+    background-color: #222224;
+    height: 528px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 97px;
+
+    &__banner{
+        position: relative;
+    }
+
+    &__banner-img{
+        position: absolute;
+    }
+
+    &__banner-blackout{
+        position: absolute;
+    }
+
+    &__banner-text{
+        position: absolute;
+        top: 146px;
+        left: 39px;
+        font-family: Lato;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+    }
+
+    &__banner-text h1{
+        font-size: 53.7px;
+        display: flex;
+        gap: 15px;
+    }
+
+    &__banner-text span{
+        font-size: 53.7px;
+        color: $colorSelectSite;
+    }
+
+    &__banner-text h2{
+        font-size: 32.2px;
+    }
+
+    &__info{
+        width: 373px;
+        // background-color: #222224;
+    }
+
+    &__info-card{
+        display: flex;
+        padding-top: 48px;
+    }
+
+    &__info-card-img{
+        padding: 0 35px;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__info-card-text{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-right: 42px;
+        font-family: Lato;
+        line-height: 1.2;
+        letter-spacing: 0.025em;
+        color: #fbfbfb;
+    }
+
+    &__info-card-text h3{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__info-card-text p{
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+}
+
+.footer{
+
+    &__subscribe{
+        height: 449px;
+        background-image: url(./img/footer_font.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__subscribe-beckgraund{
+        background: rgba(242,242,242,0.5);
+        height: 450px;
+    }
+
+    &__subscribe-position{
+        display: flex;
+        height: 438px;
+        align-items: center;
+    }
+
+    &__subscribe-info{
+        display: flex;
+        max-width: 50%;
+        gap: 28px;
+    }
+
+    &__subscribe-info img{
+        width: 83px;
+        height: 83px;
+        display: flex;
+        max-width: 50%;
+        gap: 28px;
+    }
+
+    &__subscribe-info-text{
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+    }
+
+    &__subscribe-info-text p{
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        font-style: italic;
+        letter-spacing: 0.025em;
+        color: #222224;
+        padding-right: 65px;
+    }
+
+    &__subscribe-info-text h3{
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: $colorSelectSite;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__subscribe-info-text span{
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 300;
+        color: #222224;
+    }
+
+    &__subscribe-subsc{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        padding-left: 100px;
+    }
+
+    &__subscribe-subsc-text{
+        text-align: center;
+    }
+
+    &__subscribe-subsc-text h2{
+        font-family: Lato;
+        font-size: 24px;
+        line-height: 54px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #222224;
+    }
+
+    &__subscribe-subsc-text p{
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        text-transform: none;
+        color: #222224;
+    }
+
+    &__subscribe-subsc-form form{
+        width: 356px;
+        height: 49px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__subscribe-subsc-form input{
+        width: 334px;
+        height: 46px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #222224;
+        opacity: 0.67;
+        background: #e1e1e1;;
+        border-radius: 23px 0 0 23px;
+        border-bottom-left-radius: 23px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        padding-left: 22px;
+        border: none;
+    }
+
+    &__subscribe-subsc-form button{
+        width: 104px;
+        height: 46px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        background: $colorSelectSite;
+        cursor:pointer;
+        border-radius: 0 23px 23px 0;
+        vertical-align: middle;
+        padding-left: 15px;
+        border: none;
+    }
+
+    &__info-brand article{
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        color: #898989;
+        height: 170px;
+        overflow: auto;
+    }
+
+    &__info-brand p{
+        padding-bottom: 20px;
+    }
+
+    &__info-brand{
+        max-width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__info{
+        display: flex;
+        gap: 40px;
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+
+    &__info-box{
+        display: flex;
+        gap: 90px;
+    }
+
+    &__info-box-item h3{
+        padding-bottom: 20px;
+    }
+
+    &__info-box-item-link{
+        display: block;
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 42px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #898989;
+    }
+
+    &__info-box-item-link:hover{
+        color: $colorSelectSite;
+    }
+
+    &__info-box-item{
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+        color: $colorSelectSite;
+    }
+
+    &__footer{
+        height: 79px;
+        background-color: #e6e6e6;
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    &__nav p{
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 42px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #7a7a7a;
+    }
+
+    &__nav-icons a {
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__nav-icons{
+        display: flex;
+        gap: 8px;
+    }
+}
+
+
+
+.fa {
+    width: 31px;
+    height: 32px;
+    background: #FFFFFF;
+    color: #b2b2b2;
+}
+
+.fa:hover {
+    background: $colorSelectSite;
+    color: #FFFFFF;
+    svg:hover {
+        fill: white;
+    }
+}
