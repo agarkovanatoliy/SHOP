@@ -1,5 +1,4 @@
 .footer{
-    margin-top: 97px;
 
     &__subscribe{
         height: 449px;
@@ -66,6 +65,23 @@
         line-height: 14px;
         font-weight: 300;
         color: #222224;
+    }
+
+    &__rectangle__1{
+        width: 38px;
+        height: 4px;
+        background: #d6d6d6;
+    }
+
+    &__rectangle__2{
+        width: 38px;
+        height: 4px;
+        background-color: $colorSelectSite;
+    }
+
+    &__subscribe-rectangle{
+        display: flex;
+        gap: 20px;
     }
 
     &__subscribe-subsc{
@@ -155,6 +171,9 @@
         color: #898989;
         height: 170px;
         overflow: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &__info-brand p{
@@ -243,14 +262,74 @@
 
 
 
-.fa {
+.fa-facebook {
     width: 31px;
     height: 32px;
     background: #FFFFFF;
     color: #b2b2b2;
 }
 
-.fa:hover {
+.fa-facebook:hover {
+    background: $colorSelectSite;
+    color: #FFFFFF;
+    svg:hover {
+        fill: white;
+    }
+}
+
+.fa-instagram {
+    width: 31px;
+    height: 32px;
+    background: #FFFFFF;
+    color: #b2b2b2;
+}
+
+.fa-instagram:hover {
+    background: $colorSelectSite;
+    color: #FFFFFF;
+    svg:hover {
+        fill: white;
+    }
+}
+
+.fa-pinterest-p {
+    width: 31px;
+    height: 32px;
+    background: #FFFFFF;
+    color: #b2b2b2;
+}
+
+.fa-pinterest-p:hover {
+    background: $colorSelectSite;
+    color: #FFFFFF;
+    svg:hover {
+        fill: white;
+    }
+}
+
+.fa-twitter {
+    width: 31px;
+    height: 32px;
+    background: #FFFFFF;
+    color: #b2b2b2;
+}
+
+.fa-twitter:hover {
+    background: $colorSelectSite;
+    color: #FFFFFF;
+    svg:hover {
+        fill: white;
+    }
+}
+
+.fa-google-plus {
+    width: 31px;
+    height: 32px;
+    background: #FFFFFF;
+    color: #b2b2b2;
+}
+
+.fa-google-plus:hover {
     background: $colorSelectSite;
     color: #FFFFFF;
     svg:hover {

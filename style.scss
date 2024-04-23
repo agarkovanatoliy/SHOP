@@ -4,6 +4,7 @@
 @import 'product';
 @import 'feature';
 @import 'banner';
+@import 'pageProduct';
 
 * {
     margin: 0;
@@ -70,7 +71,7 @@ ul {
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 0.025em;
-        color: #222222;
+        color: $colorText;
     }
 
     &__left-h2-span{
@@ -240,7 +241,7 @@ ul {
         line-height: 32px;
         font-weight: 300;
         letter-spacing: 0.025em;
-        color: #222222;
+        color: $colorText;
     }
 
     &__summary-span::before{
@@ -268,7 +269,7 @@ ul {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.025em;
-        color: #232323;
+        color: $colorText;
         padding-bottom: 10px;
         cursor: pointer;
     }
@@ -340,7 +341,7 @@ ul {
         line-height: 1.2;
         font-weight: 700;
         text-transform: uppercase;
-        color: #222222;
+        color: $colorText;
     }
 
     &__produkt-star{
@@ -369,7 +370,7 @@ ul {
         line-height: 1.2;
         font-weight: 700;
         text-transform: uppercase;
-        color: #222222;
+        color: $colorText;
         text-align-last: justify;
         padding: 4px 0 16px;
     }
@@ -398,8 +399,10 @@ ul {
     width: 1600px;
     background-color: #ffffff;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 
     &__nav-menu{
         background-color: #ffffff;
@@ -415,7 +418,10 @@ ul {
         line-height: 26px;
         font-weight: 700;
         text-transform: uppercase;
-        color: #222222;
+        color: $colorText;
+        &:hover{
+            color: $colorSelectSite;
+        }
     }
 
     &__banner{
@@ -440,7 +446,7 @@ ul {
         line-height: 1.2;
         font-weight: 900;
         letter-spacing: 0.025em;
-        color: #222222;
+        color: $colorText;
     }
 
     &__banner-text h2{
@@ -449,7 +455,7 @@ ul {
         line-height: 1.2;
         font-weight: 900;
         letter-spacing: 0.025em;
-        color: #222222;
+        color: $colorText;
     }
 
     &__banner-text span{
@@ -491,6 +497,7 @@ ul {
     position: absolute;
     top: 50px;
     left: -17px;
+    z-index: 10;
     &::before{
         content: "";
         display: block;
@@ -525,10 +532,14 @@ ul {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.025em;
-        color: #232323;
+        color: $colorText;
         border-bottom: 1px solid #e8e8e8;
         margin-bottom: 16px;
         width: 235px;
+    }
+
+    &__title-middlePadding{
+        margin-top: 12px;
     }
 
     &__item{
@@ -539,15 +550,36 @@ ul {
     }
 
     &__img{
-        width: 255px;
+        background-image: url(./img/sale.png);
         height: 118px;
+        transition: all 0.5s ease;
+        margin-top: 160px;
+        &:hover{
+            box-shadow: 0 0 5px 5px #a4a4a4;
+            transform: scale(1.05);
+            transition: all 0.5s ease;
+        }
     }
 
-    &__img-sale{
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
+    &__img-text{
+        font-family: Lato;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: #fff;
+        box-sizing: border-box;
+        height: 118px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-right: 20px;
+        padding-bottom: 15px;
     }
+
+
 
 }
 

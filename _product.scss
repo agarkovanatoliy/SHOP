@@ -4,7 +4,7 @@
     align-items: center;
     padding-bottom: 110px;
 
-    &__title h2{
+    &__title-dsc{
         font-family: Lato;
         font-size: 30px;
         line-height: 54px;
@@ -13,7 +13,7 @@
         color: #222222;
     }
 
-    &__title p{
+    &__title-text{
         font-family: Lato;
         font-size: 14px;
         line-height: 54px;
@@ -30,9 +30,19 @@
 
     &__card{
         width: 261px;
+        position: relative;
+        &:hover{
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+        }
+        &:hover .product__card-img{
+            filter: brightness(30%);
+        }
+        &:hover .product__card-add-box{
+            display: flex;
+        }
     }
 
-    &__card-text h3{
+    &__card-text-dsc{
         font-family: Lato;
         font-size: 13px;
         line-height: 1.2;
@@ -41,7 +51,7 @@
         color: #222222;
     }
 
-    &__card-text p{
+    &__card-text-price{
         font-family: Lato;
         font-size: 16px;
         line-height: 1.2;
@@ -55,6 +65,32 @@
         flex-direction: column;
         gap: 17px;
         padding: 20px 14px;
+    }
+
+    &__card-link-add{
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #fff;
+        border: 1px solid #fff;
+        align-items: center;
+        pointer-events: all;
+        &:hover{
+            box-shadow: 0 0 10px 0 #fff;
+        }
+    }
+
+    &__card-add-box{
+        position: absolute;
+        top: 98px;
+        display: none;
+        justify-content: center;
+        width: 100%;
+        pointer-events: none;
     }
 
     &__section-card{

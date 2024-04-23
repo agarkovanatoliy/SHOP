@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 97px;
 
     &__banner{
         position: relative;
@@ -80,4 +79,8 @@
         line-height: 24px;
         font-weight: 300;
     }
+}
+
+.feature1{
+    margin-bottom: 97px;
 }
