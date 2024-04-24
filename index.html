@@ -9,76 +9,78 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="heder center">
-        <div class="heder__left container">
-            <div class="heder__left-logo">
-                <a href="index.html" class="heder__left-logo-a">
-                    <img class="heder__left-img" src="./img/logo.png" alt="logo">
-                    <h2 class="heder__left-h2">BRAN<span class="heder__left-h2-span">D</span></h2>
-                </a>
+    <header class="heder__border center">
+        <div class="heder container">
+            <div class="heder__left">
+                <div class="heder__left-logo">
+                    <a href="index.html" class="heder__left-logo-a">
+                        <img class="heder__left-img" src="./img/logo.png" alt="logo">
+                        <h2 class="heder__left-h2">BRAN<span class="heder__left-h2-span">D</span></h2>
+                    </a>
+                </div>
+                <div class="heder__left-search">
+                    <div class="browse">
+                        <details class="browse__details">
+                            <summary class="browse__summary"><span class="browse__summary-span">Browse</span></summary>
+                            <div class="browse__content">
+                                <details class="browse__content-item">
+                                    <summary class="browse__content-summary"><span class="browse__content-title">Women</span></summary>
+                                    <div class="browse__content-link">
+                                        <a href="" class="browse__link">Dresses</a>
+                                        <a href="" class="browse__link">Tops</a>
+                                        <a href="" class="browse__link">Sweaters/Knits</a>
+                                        <a href="" class="browse__link">Jackets/Coats</a>
+                                        <a href="" class="browse__link">Blazers</a>
+                                        <a href="" class="browse__link">Denim</a>
+                                        <a href="" class="browse__link">Leggings/Pants</a>
+                                        <a href="" class="browse__link">Skirts/Shorts</a>
+                                        <a href="" class="browse__link">Accessories</a>
+                                    </div>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="heder__left-search-form">
+                        <form>
+                        <input type="text" placeholder="Search for Item...">
+                        <button type="submit"></button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="heder__left-search">
-                <div class="browse">
-                    <details class="browse__details">
-                        <summary class="browse__summary"><span class="browse__summary-span">Browse</span></summary>
-                        <div class="browse__content">
-                            <details class="browse__content-item">
-                                <summary class="browse__content-summary"><span class="browse__content-title">Women</span></summary>
-                                <div class="browse__content-link">
-                                    <a href="#" class="browse__link">Dresses</a>
-                                    <a href="#" class="browse__link">Tops</a>
-                                    <a href="#" class="browse__link">Sweaters/Knits</a>
-                                    <a href="#" class="browse__link">Jackets/Coats</a>
-                                    <a href="#" class="browse__link">Blazers</a>
-                                    <a href="#" class="browse__link">Denim</a>
-                                    <a href="#" class="browse__link">Leggings/Pants</a>
-                                    <a href="#" class="browse__link">Skirts/Shorts</a>
-                                    <a href="#" class="browse__link">Accessories</a>
+            <div class="heder__right">
+                <div class="basket">
+                    <details class="basket__details">
+                        <summary class="basket__summary"><img src="./img/basket.png" alt="basket"></summary>
+                        <div class="basket__content">
+                            <div class="basket__content-item">
+                                <a href="#"><img src="./img/produkt1.png" alt="продукт" class="basket__produkt"></a>
+                                <div class="basket__product-info">
+                                    <h2 class="basket__produkt-title">Rebox Zane</h2>
+                                    <img src="./img/star.png" alt="star" class="basket__produkt-star">
+                                    <h2 class="basket__produkt-price">1  x   $250</h2>
                                 </div>
-                            </details>
+                                <img src="./img/__1827.png" alt="отказ" class="basket__rejection">
+                            </div>
+                            <div class="basket__content-item">
+                                <a href="#"><img src="./img/produkt2.png" alt="продукт" class="basket__produkt"></a>
+                                <div class="basket__product-info">
+                                    <h2 class="basket__produkt-title">Rebox Zane</h2>
+                                    <img src="./img/star.png" alt="star" class="basket__produkt-star">
+                                    <h2 class="basket__produkt-price">1  x   $250</h2>
+                                </div>
+                                <img src="./img/__1827.png" alt="отказ" class="basket__rejection">
+                            </div>
+                            <h2 class="basket__content-total">TOTAL $500.00</h2>
+                            <a href="./checkout.html" class="basket__content-link"><button class="basket__content-button">Checkout</button></a>
+                            <a href="#" class="basket__content-link"><button class="basket__content-button">Go to cart</button></a>
                         </div>
                     </details>
                 </div>
-                <div class="heder__left-search-form">
-                    <form>
-                    <input type="text" placeholder="Search for Item...">
-                    <button type="submit"></button>
-                    </form>
-                </div>
+                <button class="heder__right-button-account">
+                    My Account
+                </button>
             </div>
-        </div>
-        <div class="heder__right container">
-            <div class="basket">
-                <details class="basket__details">
-                    <summary class="basket__summary"><img src="./img/basket.png" alt="basket"></summary>
-                    <div class="basket__content">
-                        <div class="basket__content-item">
-                            <a href="#"><img src="./img/produkt1.png" alt="продукт" class="basket__produkt"></a>
-                            <div class="basket__product-info">
-                                <h2 class="basket__produkt-title">Rebox Zane</h2>
-                                <img src="./img/star.png" alt="star" class="basket__produkt-star">
-                                <h2 class="basket__produkt-price">1  x   $250</h2>
-                            </div>
-                            <img src="./img/__1827.png" alt="отказ" class="basket__rejection">
-                        </div>
-                        <div class="basket__content-item">
-                            <a href="#"><img src="./img/produkt2.png" alt="продукт" class="basket__produkt"></a>
-                            <div class="basket__product-info">
-                                <h2 class="basket__produkt-title">Rebox Zane</h2>
-                                <img src="./img/star.png" alt="star" class="basket__produkt-star">
-                                <h2 class="basket__produkt-price">1  x   $250</h2>
-                            </div>
-                            <img src="./img/__1827.png" alt="отказ" class="basket__rejection">
-                        </div>
-                        <h2 class="basket__content-total">TOTAL $500.00</h2>
-                        <a href="#" class="basket__content-link"><button class="basket__content-button">Checkout</button></a>
-                        <a href="#" class="basket__content-link"><button class="basket__content-button">Go to cart</button></a>
-                    </div>
-                </details>
-            </div>
-            <button class="heder__right-button-account">
-                My Account
-            </button>
         </div>
     </header>
     <section class="slider center">
