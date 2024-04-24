@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product</title>
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -73,7 +73,7 @@
                             </div>
                             <h2 class="basket__content-total">TOTAL $500.00</h2>
                             <a href="./checkout.html" class="basket__content-link"><button class="basket__content-button">Checkout</button></a>
-                            <a href="./shoppingCart.html" class="basket__content-link"><button class="basket__content-button">Go to cart</button></a>
+                            <a href="#" class="basket__content-link"><button class="basket__content-button">Go to cart</button></a>
                         </div>
                     </details>
                 </div>
@@ -374,219 +374,111 @@
                 </li>
             </ul>
         </div>
-        <div class="slider__banner">
-            <div class="slider__banner-text">
-                <h1>THE BRAND</h1>
-                <h2>OF LUXERIOUS <span>FASHION</span></h2>
+    </section>
+    <section class="sliderBaner">
+        <div class="sliderBaner__title  container">
+            <div class="sliderBaner__title-heading">
+                <h1 class="sliderBaner__title-heading-h1">New Arrivals</h1>
+            </div>
+            <div class="sliderBaner__title-nav">
+                <a href="./index.html" class="sliderBaner__banner-product-link">Home /</a>
+                <a href="#" class="sliderBaner__banner-product-link">Men /</a>
+                <a href="#" class="sliderBaner__banner-product-link sliderBaner__banner-product-link1">New Arrivals</a>
             </div>
         </div>
     </section>
-    <section class="banner container">
-            <div class="banner__card banner__big-card1">
-                <a href="#">
-                    <div class="banner__img">
-                        <img src="./img/man.png" alt="man">
-                    </div>
-                    <div class="banner__text">
-                        <h2>HOT DEAL</h2>
-                        <h1>FOR MEN</h1>
-                    </div>
-                </a>
+    <section class="shoppingCart center">
+        <div class="shoppingCart__content container">
+            <div class="shoppingCart__content-title">
+                <h2 class="shoppingCart__content-title-item shoppingCart__content-title-item-first">Product Details</h2>
+                <h2 class="shoppingCart__content-title-item">Unite Price</h2>
+                <h2 class="shoppingCart__content-title-item">Quantity</h2>
+                <h2 class="shoppingCart__content-title-item">Shipping</h2>
+                <h2 class="shoppingCart__content-title-item">Subtotal</h2>
+                <h2 class="shoppingCart__content-title-item">Action</h2>
             </div>
-            <div class="banner__card">
-                <a href="#">
-                    <div class="banner__img">
-                        <img src="./img/accesories.png" alt="accesories">
+            <div class="shoppingCart__content-item">
+                <div class="shoppingCart__content-item-info">
+                    <a class="shoppingCart__content-item-info-img" href="singlePage.html"><img class="shoppingCart__content-item-img"
+                            src="img/shoppingCartProduct1.png" alt=""></a>
+                    <div class="shoppingCart__content-item-description">
+                        <h3 class="shoppingCart__content-item-name">Mango People T-shirt</h3>
+                        <span class="shoppingCart__content-item-colorSize">Color:
+                            <span class="shoppingCart__content-item-colorSize-data">Red</span><br>
+                            Size: <span class="shoppingCart__content-item-colorSize-data">Xll</span>
+                        </span>
                     </div>
-                    <div class="banner__text">
-                        <h2>LUXIROUS & TRENDY</h2>
-                        <h1>ACCESORIES</h1>
-                    </div>
-                </a>
-            </div>
-            <div class="banner__card ">
-                <a href="#">
-                    <div class="banner__img">
-                        <img src="./img/women.png" alt="women">
-                    </div>
-                    <div class="banner__text">
-                        <h2>30% OFFER</h2>
-                        <h1>WOMEN</h1>
-                    </div>
-                </a>
-            </div>
-            <div class="banner__card banner__big-card2">
-                <a href="#">
-                    <div class="banner__img">
-                        <img src="./img/kids.png" alt="kids">
-                    </div>
-                    <div class="banner__text">
-                        <h2>NEW ARRIVALS</h2>
-                        <h1>FOR KIDS</h1>
-                    </div>
-                </a>
-            </div>
-    </section>
-    <section class="product container">
-        <div class="product__title">
-            <h2 class="product__title-dsc">Fetured Items</h2>
-            <p class="product__title-text">Shop for items based on what we featured in this week</p>
-        </div>
-        <div class="product__section-card">
-            <div class="product__card">
-                <a href="#" class="product__card-link">
-                    <img src="./img/card1.png" alt="товар" class="product__card-img">
-                    <div class="product__card-text">
-                        <h3 class="product__card-text-dsc">Mango  People  T-shirt</h3>
-                        <p class="product__card-text-price">$52.00</p>
-                    </div>
-                </a>
-                <div class="product__card-add-box">
-                    <a href="#" class="product__card-link-add">
-                        <img class="product__card-link-add-pic" src="./img/bascet.svg" alt="добавить">
-                        <p class="product__card-link-add-title">Add to Cart</p>
-                    </a>
                 </div>
+                <span class="shoppingCart__content-item-price">$150</span>
+                <input class="shoppingCart__content-item-inputField" type="text" name="" id="" value="2">
+                <span class="shoppingCart__content-item-shipping">FREE</span>
+                <span class="shoppingCart__content-item-subtotal">$300</span>
+                <a class="shoppingCart__content-item-action" href="#"><img src="./img/remove_icon.png"
+                    alt="del"></a>
             </div>
-            <div class="product__card">
-                <a href="#" class="product__card-link">
-                    <img src="./img/card2.png" alt="товар" class="product__card-img">
-                    <div class="product__card-text">
-                        <h3 class="product__card-text-dsc">Mango  People  T-shirt</h3>
-                        <p class="product__card-text-price">$52.00</p>
+            <div class="shoppingCart__content-item">
+                <div class="shoppingCart__content-item-info">
+                    <a class="shoppingCart__content-item-info-img" href="singlePage.html"><img class="shoppingCart__content-item-img"
+                            src="img/shoppingCartProduct2.png" alt=""></a>
+                    <div class="shoppingCart__content-item-description">
+                        <h3 class="shoppingCart__content-item-name">Mango People T-shirt</h3>
+                        <span class="shoppingCart__content-item-colorSize">Color:
+                            <span class="shoppingCart__content-item-colorSize-data">Red</span><br>
+                            Size: <span class="shoppingCart__content-item-colorSize-data">Xll</span>
+                        </span>
                     </div>
-                </a>
-                <div class="product__card-add-box">
-                    <a href="#" class="product__card-link-add">
-                        <img class="product__card-link-add-pic" src="./img/bascet.svg" alt="добавить">
-                        <p class="product__card-link-add-title">Add to Cart</p>
-                    </a>
                 </div>
+                <span class="shoppingCart__content-item-price">$150</span>
+                <input class="shoppingCart__content-item-inputField" type="text" name="" id="" value="2">
+                <span class="shoppingCart__content-item-shipping">FREE</span>
+                <span class="shoppingCart__content-item-subtotal">$300</span>
+                <a class="shoppingCart__content-item-action" href="#"><img src="./img/remove_icon.png"
+                    alt="del"></a>
             </div>
-            <div class="product__card">
-                <a href="#" class="product__card-link">
-                    <img src="./img/card3.png" alt="товар" class="product__card-img">
-                    <div class="product__card-text">
-                        <h3 class="product__card-text-dsc">Mango  People  T-shirt</h3>
-                        <p class="product__card-text-price">$52.00</p>
+            <div class="shoppingCart__content-item">
+                <div class="shoppingCart__content-item-info">
+                    <a class="shoppingCart__content-item-info-img" href="singlePage.html"><img class="shoppingCart__content-item-img"
+                            src="img/shoppingCartProduct3.png" alt=""></a>
+                    <div class="shoppingCart__content-item-description">
+                        <h3 class="shoppingCart__content-item-name">Mango People T-shirt</h3>
+                        <span class="shoppingCart__content-item-colorSize">Color:
+                            <span class="shoppingCart__content-item-colorSize-data">Red</span><br>
+                            Size: <span class="shoppingCart__content-item-colorSize-data">Xll</span>
+                        </span>
                     </div>
-                </a>
-                <div class="product__card-add-box">
-                    <a href="#" class="product__card-link-add">
-                        <img class="product__card-link-add-pic" src="./img/bascet.svg" alt="добавить">
-                        <p class="product__card-link-add-title">Add to Cart</p>
-                    </a>
                 </div>
-            </div>
-            <div class="product__card">
-                <a href="#" class="product__card-link">
-                    <img src="./img/card4.png" alt="товар" class="product__card-img">
-                    <div class="product__card-text">
-                        <h3 class="product__card-text-dsc">Mango  People  T-shirt</h3>
-                        <p class="product__card-text-price">$52.00</p>
-                    </div>
-                </a>
-                <div class="product__card-add-box">
-                    <a href="#" class="product__card-link-add">
-                        <img class="product__card-link-add-pic" src="./img/bascet.svg" alt="добавить">
-                        <p class="product__card-link-add-title">Add to Cart</p>
-                    </a>
-                </div>
-            </div>
-            <div class="product__card">
-                <a href="#" class="product__card-link">
-                    <img src="./img/card5.png" alt="товар" class="product__card-img">
-                    <div class="product__card-text">
-                        <h3 class="product__card-text-dsc">Mango  People  T-shirt</h3>
-                        <p class="product__card-text-price">$52.00</p>
-                    </div>
-                </a>
-                <div class="product__card-add-box">
-                    <a href="#" class="product__card-link-add">
-                        <img class="product__card-link-add-pic" src="./img/bascet.svg" alt="добавить">
-                        <p class="product__card-link-add-title">Add to Cart</p>
-                    </a>
-                </div>
-            </div>
-            <div class="product__card">
-                <a href="#" class="product__card-link">
-                    <img src="./img/card6.png" alt="товар" class="product__card-img">
-                    <div class="product__card-text">
-                        <h3 class="product__card-text-dsc">Mango  People  T-shirt</h3>
-                        <p class="product__card-text-price">$52.00</p>
-                    </div>
-                </a>
-                <div class="product__card-add-box">
-                    <a href="#" class="product__card-link-add">
-                        <img class="product__card-link-add-pic" src="./img/bascet.svg" alt="добавить">
-                        <p class="product__card-link-add-title">Add to Cart</p>
-                    </a>
-                </div>
-            </div>
-            <div class="product__card">
-                <a href="#" class="product__card-link">
-                    <img src="./img/card7.png" alt="товар" class="product__card-img">
-                    <div class="product__card-text">
-                        <h3 class="product__card-text-dsc">Mango  People  T-shirt</h3>
-                        <p class="product__card-text-price">$52.00</p>
-                    </div>
-                </a>
-                <div class="product__card-add-box">
-                    <a href="#" class="product__card-link-add">
-                        <img class="product__card-link-add-pic" src="./img/bascet.svg" alt="добавить">
-                        <p class="product__card-link-add-title">Add to Cart</p>
-                    </a>
-                </div>
-            </div>
-            <div class="product__card">
-                <a href="#" class="product__card-link">
-                    <img src="./img/card8.png" alt="товар" class="product__card-img">
-                    <div class="product__card-text">
-                        <h3 class="product__card-text-dsc">Mango  People  T-shirt</h3>
-                        <p class="product__card-text-price">$52.00</p>
-                    </div>
-                </a>
-                <div class="product__card-add-box">
-                    <a href="#" class="product__card-link-add">
-                        <img class="product__card-link-add-pic" src="./img/bascet.svg" alt="добавить">
-                        <p class="product__card-link-add-title">Add to Cart</p>
-                    </a>
-                </div>
+                <span class="shoppingCart__content-item-price">$150</span>
+                <input class="shoppingCart__content-item-inputField" type="text" name="" id="" value="2">
+                <span class="shoppingCart__content-item-shipping">FREE</span>
+                <span class="shoppingCart__content-item-subtotal">$300</span>
+                <a class="shoppingCart__content-item-action" href="#"><img src="./img/remove_icon.png"
+                    alt="del"></a>
             </div>
         </div>
-        <a href="./product.html" class="product__link"><button class="product__button">Browse All Product</button></a>
-    </section>
-    <section class="feature1">
-        <div class="feature container">
-            <div class="feature__banner">
-                <img src="./img/winter_woman.png" alt="баннер" class="feature__banner-img">
-                <div class="feature__banner-text">
-                    <h1>30% <span>OFFER</span></h1>
-                    <h2>FOR WOMEN</h2>
-                </div>
+        <div class="shoppingCart__button container">
+            <button class="shoppingCart__button-item">cLEAR SHOPPING CART</button>
+            <button class="shoppingCart__button-item">cONTINUE sHOPPING</button>
+        </div>
+        <div class="shoppingCart__info container">
+            <div class="shoppingCart__info-addres">
+                <h2 class="shoppingCart__info-title">Shipping Address</h2>
+                <select class="shoppingCart__info-select" name="" id="">
+                    <option selected="selected">Bangladesh</option>
+                </select>
+                <input class="shoppingCart__info-input" type="text" value="State">
+                <input class="shoppingCart__info-input" type="int" value="Postcode / Zip">
+                <button class="shoppingCart__info-button">Get a Quote</button>
             </div>
-            <div class="feature__info">
-                <div class="feature__info-card">
-                    <img src="./img/car.png" alt="car" class="feature__info-card-img">
-                    <div class="feature__info-card-text">
-                        <h3>Free Delivery</h3>
-                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </div>
-                </div>
-                <div class="feature__info-card">
-                    <img src="./img/discount.png" alt="car" class="feature__info-card-img">
-                    <div class="feature__info-card-text">
-                        <h3>Sales & discounts</h3>
-                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </div>
-                </div>
-                <div class="feature__info-card">
-                    <img src="./img/crown.png" alt="car" class="feature__info-card-img">
-                    <div class="feature__info-card-text">
-                        <h3>Quality assurance</h3>
-                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </div>
-                </div>
+            <div class="shoppingCart__info-discount">
+                <h2 class="shoppingCart__info-title">Coupon Discount</h2>
+                <span class="shoppingCart__info-discount-description">Enter your coupon code if you have one</span>
+                <input class="shoppingCart__info-input" type="text" value="State">
+                <button class="shoppingCart__info-button">Apply coupon</button>
+            </div>
+            <div class="shoppingCart__info-checkout">
+                <p class="shoppingCart__info-checkout-price">Sub total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$900</p>
+                <p class="shoppingCart__info-checkout-priceFinal">GRAND TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span                  class="shoppingCart__info-checkout-priceFinal-colored">$900</span></p>
+                <a href="checkout.html"><button            class="shoppingCart__info-checkout-button">Proceed to checkout</button></a>
             </div>
         </div>
     </section>
@@ -684,5 +576,7 @@
             </div>
         </section>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

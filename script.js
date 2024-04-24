@@ -1,8 +1,6 @@
-<script>
-
-const rangeInput = document.querySelectorAll(".contentProduct__catalog-product-sort-range-input input"),
-    priceInput = document.querySelectorAll(".contentProduct__catalog-product-sort-price-input input"),
-    range = document.querySelector(".contentProduct__catalog-product-sort-slider .contentProduct__catalog-product-sort-progress");
+const rangeInput = document.querySelectorAll(".contentProduct__catalog-product-sort-range-input input");
+const priceInput = document.querySelectorAll(".contentProduct__catalog-product-sort-price-input input");
+const range = document.querySelector(".contentProduct__catalog-product-sort-slider .contentProduct__catalog-product-sort-progress");
 let priceGap = 10;
 
 priceInput.forEach((input) => {
@@ -11,7 +9,7 @@ priceInput.forEach((input) => {
                 maxPrice = parseInt(priceInput[1].value);
 
             if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
-                if (e.target.className === "input-min") {
+                if (e.target.className === "contentProduct__catalog-product-sort-price-input-min") {
                 rangeInput[0].value = minPrice;
                 range.style.left = (minPrice / rangeInput[0].max)  + "%";
                 } else {
@@ -28,7 +26,7 @@ rangeInput.forEach((input) => {
             maxVal = parseInt(rangeInput[1].value);
 
         if (maxVal - minVal < priceGap) {
-            if (e.target.className === "range-min") {
+            if (e.target.className === "contentProduct__catalog-product-sort-range-min") {
             rangeInput[0].value = maxVal - priceGap;
             } else {
             rangeInput[1].value = minVal + priceGap;
@@ -43,4 +41,4 @@ rangeInput.forEach((input) => {
 });
 
 
-</script>
+
