@@ -387,100 +387,119 @@
             </div>
         </div>
     </section>
-    <section class="shoppingCart center">
-        <div class="shoppingCart__content container">
-            <div class="shoppingCart__content-title">
-                <h2 class="shoppingCart__content-title-item shoppingCart__content-title-item-first">Product Details</h2>
-                <h2 class="shoppingCart__content-title-item">Unite Price</h2>
-                <h2 class="shoppingCart__content-title-item">Quantity</h2>
-                <h2 class="shoppingCart__content-title-item">Shipping</h2>
-                <h2 class="shoppingCart__content-title-item">Subtotal</h2>
-                <h2 class="shoppingCart__content-title-item">Action</h2>
-            </div>
-            <div class="shoppingCart__content-item">
-                <div class="shoppingCart__content-item-info">
-                    <a class="shoppingCart__content-item-info-img" href="singlePage.html"><img class="shoppingCart__content-item-img"
-                            src="img/shoppingCartProduct1.png" alt=""></a>
-                    <div class="shoppingCart__content-item-description">
-                        <h3 class="shoppingCart__content-item-name">Mango People T-shirt</h3>
-                        <span class="shoppingCart__content-item-colorSize">Color:
-                            <span class="shoppingCart__content-item-colorSize-data">Red</span><br>
-                            Size: <span class="shoppingCart__content-item-colorSize-data">Xll</span>
-                        </span>
+    <section class="singlePage center">
+        <div class="singlePage__slide">
+            <div class="singlePage__slide-arrow"><img src="img/arrowLeft.png" alt="стрелка"></div>
+            <img class="singlePage__slide-image" src="img/single_page_woman.jpg" alt="">
+            <div class="singlePage__slide-arrow"><img src="img/arrowRight.png" alt="стрелка"></div>
+        </div>
+        <section class="singlePage__content container">
+            <div class="singlePage__content-productDescription">
+                <h3 class="singlePage__content-productDescription-collectionTitle">WOMEN COLLECTION</h3>
+                <div class="singlePage__content-productDescription-borderMiddle"></div>
+                <h2 class="singlePage__content-productDescription-title">Moschino Cheap And Chic;</h2>
+                <p class="singlePage__content-productDescription-description">Compellingly actualize fully researched processes before proactive
+                    outsourcing. Progressively syndicate
+                    collaborative architectures before cutting-edge services. Completely visualize parallel core
+                    competencies rather than exceptional portals.</p>
+                <div class="singlePage__content-productDescription-production">
+                    <span class="singlePage__content-productDescription-production-category">MATERIAL: <span
+                            class="singlePage__content-productDescription-production-categoryValue">COTTON</span></span>
+                    <span class="singlePage__content-productDescription-production-category">DESIGNER: <span
+                            class="singlePage__content-productDescription-production-categoryValue">BINBURHAN</span></span>
+                </div>
+                <span class="singlePage__content-productDescription-price">$561</span>
+                <div class="singlePage__content-productDescription-paramChoice">
+                    <div>
+                        <h2 class="singlePage__content-productDescription-production-categoryValue">CHOOSE COLOR</h2>
+                        <select class="singlePage__content-productDescription-paramChoice-select" name="" id="">
+                            <option class="singlePage__content-productDescription-paramChoice-selectValue" selected="selected">
+                                <span class="singlePage__content-productDescription-paramChoice-selectValueColor">Red</span>
+                            </option>
+                        </select>
+                    </div>
+                    <div>
+                        <h2 class="singlePage__content-productDescription-production-categoryValue">CHOOSE SIZE</h2>
+                        <select class="singlePage__content-productDescription-paramChoice-select" name="" id="">
+                            <option class="singlePage__content-productDescription-paramChoice-selectValue" selected="selected">XXL</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h2 class="singlePage__content-productDescription-production-categoryValue">QUANTITY</h2>
+                        <input class="singlePage__content-productDescription-paramChoice-input" type="text" value="2">
                     </div>
                 </div>
-                <span class="shoppingCart__content-item-price">$150</span>
-                <input class="shoppingCart__content-item-inputField" type="text" name="" id="" value="2">
-                <span class="shoppingCart__content-item-shipping">FREE</span>
-                <span class="shoppingCart__content-item-subtotal">$300</span>
-                <a class="shoppingCart__content-item-action" href="#"><img src="./img/remove_icon.png"
-                    alt="del"></a>
+                <a href="shoppingCart.html"><button class="singlePage__content-productDescription-button">
+                        <img class="singlePage__content-productDescription-button-image" src="img/addCart.png" alt="">
+                        <span class="singlePage__content-productDescription-button-add">Add to Cart</span></button></a>
             </div>
-            <div class="shoppingCart__content-item">
-                <div class="shoppingCart__content-item-info">
-                    <a class="shoppingCart__content-item-info-img" href="singlePage.html"><img class="shoppingCart__content-item-img"
-                            src="img/shoppingCartProduct2.png" alt=""></a>
-                    <div class="shoppingCart__content-item-description">
-                        <h3 class="shoppingCart__content-item-name">Mango People T-shirt</h3>
-                        <span class="shoppingCart__content-item-colorSize">Color:
-                            <span class="shoppingCart__content-item-colorSize-data">Red</span><br>
-                            Size: <span class="shoppingCart__content-item-colorSize-data">Xll</span>
-                        </span>
+            <div class="singlePage__content-productCart">
+                <div class="singlePage__content-productCart-title">you may like also</div>
+                <div class="singlePage__content-productCart-itemsBox">
+                    <div class="product__card">
+                        <a href="./singlePage.html" class="product__card-link">
+                            <img src="./img/singlePageProduct1.png" alt="товар" class="product__card-img">
+                            <div class="product__card-text">
+                                <h3 class="product__card-text-dsc">Mango  People  T-shirt</h3>
+                                <p class="product__card-text-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="product__card-add-box">
+                            <a href="#" class="product__card-link-add">
+                                <img class="product__card-link-add-pic" src="./img/bascet.svg" alt="добавить">
+                                <p class="product__card-link-add-title">Add to Cart</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <span class="shoppingCart__content-item-price">$150</span>
-                <input class="shoppingCart__content-item-inputField" type="text" name="" id="" value="2">
-                <span class="shoppingCart__content-item-shipping">FREE</span>
-                <span class="shoppingCart__content-item-subtotal">$300</span>
-                <a class="shoppingCart__content-item-action" href="#"><img src="./img/remove_icon.png"
-                    alt="del"></a>
-            </div>
-            <div class="shoppingCart__content-item">
-                <div class="shoppingCart__content-item-info">
-                    <a class="shoppingCart__content-item-info-img" href="singlePage.html"><img class="shoppingCart__content-item-img"
-                            src="img/shoppingCartProduct3.png" alt=""></a>
-                    <div class="shoppingCart__content-item-description">
-                        <h3 class="shoppingCart__content-item-name">Mango People T-shirt</h3>
-                        <span class="shoppingCart__content-item-colorSize">Color:
-                            <span class="shoppingCart__content-item-colorSize-data">Red</span><br>
-                            Size: <span class="shoppingCart__content-item-colorSize-data">Xll</span>
-                        </span>
+                    <div class="product__card">
+                        <a href="./singlePage.html" class="product__card-link">
+                            <img src="./img/singlePageProduct2.png" alt="товар" class="product__card-img">
+                            <div class="product__card-text">
+                                <h3 class="product__card-text-dsc">Mango  People  T-shirt</h3>
+                                <p class="product__card-text-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="product__card-add-box">
+                            <a href="#" class="product__card-link-add">
+                                <img class="product__card-link-add-pic" src="./img/bascet.svg" alt="добавить">
+                                <p class="product__card-link-add-title">Add to Cart</p>
+                            </a>
+                        </div>
                     </div>
+                    <div class="product__card">
+                        <a href="./singlePage.html" class="product__card-link">
+                            <img src="./img/singlePageProduct3.png" alt="товар" class="product__card-img">
+                            <div class="product__card-text">
+                                <h3 class="product__card-text-dsc">Mango  People  T-shirt</h3>
+                                <p class="product__card-text-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="product__card-add-box">
+                            <a href="#" class="product__card-link-add">
+                                <img class="product__card-link-add-pic" src="./img/bascet.svg" alt="добавить">
+                                <p class="product__card-link-add-title">Add to Cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        <a href="./singlePage.html" class="product__card-link">
+                            <img src="./img/singlePageProduct4.png" alt="товар" class="product__card-img">
+                            <div class="product__card-text">
+                                <h3 class="product__card-text-dsc">Mango  People  T-shirt</h3>
+                                <p class="product__card-text-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="product__card-add-box">
+                            <a href="#" class="product__card-link-add">
+                                <img class="product__card-link-add-pic" src="./img/bascet.svg" alt="добавить">
+                                <p class="product__card-link-add-title">Add to Cart</p>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
-                <span class="shoppingCart__content-item-price">$150</span>
-                <input class="shoppingCart__content-item-inputField" type="text" name="" id="" value="2">
-                <span class="shoppingCart__content-item-shipping">FREE</span>
-                <span class="shoppingCart__content-item-subtotal">$300</span>
-                <a class="shoppingCart__content-item-action" href="#"><img src="./img/remove_icon.png"
-                    alt="del"></a>
             </div>
-        </div>
-        <div class="shoppingCart__button container">
-            <button class="shoppingCart__button-item">cLEAR SHOPPING CART</button>
-            <button class="shoppingCart__button-item">cONTINUE sHOPPING</button>
-        </div>
-        <div class="shoppingCart__info container">
-            <div class="shoppingCart__info-addres">
-                <h2 class="shoppingCart__info-title">Shipping Address</h2>
-                <select class="shoppingCart__info-select" name="" id="">
-                    <option selected="selected">Bangladesh</option>
-                </select>
-                <input class="shoppingCart__info-input" type="text" value="State">
-                <input class="shoppingCart__info-input" type="int" value="Postcode / Zip">
-                <button class="shoppingCart__info-button">Get a Quote</button>
-            </div>
-            <div class="shoppingCart__info-discount">
-                <h2 class="shoppingCart__info-title">Coupon Discount</h2>
-                <span class="shoppingCart__info-discount-description">Enter your coupon code if you have one</span>
-                <input class="shoppingCart__info-input" type="text" value="State">
-                <button class="shoppingCart__info-button">Apply coupon</button>
-            </div>
-            <div class="shoppingCart__info-checkout">
-                <p class="shoppingCart__info-checkout-price">Sub total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$900</p>
-                <p class="shoppingCart__info-checkout-priceFinal">GRAND TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span                  class="shoppingCart__info-checkout-priceFinal-colored">$900</span></p>
-                <a href="checkout.html"><button            class="shoppingCart__info-checkout-button">Proceed to checkout</button></a>
-            </div>
-        </div>
+        </section>
     </section>
     <footer class="footer">
         <section class="footer__subscribe">
