@@ -1,7 +1,7 @@
 const rangeInput = document.querySelectorAll(".contentProduct__catalog-product-sort-range-input input");
 const priceInput = document.querySelectorAll(".contentProduct__catalog-product-sort-price-input input");
 const range = document.querySelector(".contentProduct__catalog-product-sort-slider .contentProduct__catalog-product-sort-progress");
-let priceGap = 10;
+let priceGap = 50;
 
 priceInput.forEach((input) => {
         input.addEventListener("input", (e) => {
@@ -11,10 +11,10 @@ priceInput.forEach((input) => {
             if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
                 if (e.target.className === "contentProduct__catalog-product-sort-price-input-min") {
                 rangeInput[0].value = minPrice;
-                range.style.left = (minPrice / rangeInput[0].max)  + "%";
+                range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
                 } else {
                 rangeInput[1].value = maxPrice;
-                range.style.right = 1 - (maxPrice / rangeInput[1].max) + "%";
+                range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
                 }
             }
         });
@@ -34,8 +34,8 @@ rangeInput.forEach((input) => {
         } else {
             priceInput[0].value = minVal;
             priceInput[1].value = maxVal;
-            range.style.left = (minVal / rangeInput[0].max) + "%";
-            range.style.right = 1 - (maxVal / rangeInput[1].max) + "%";
+            range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+            range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
         }
     });
 });
